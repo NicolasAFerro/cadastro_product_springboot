@@ -44,7 +44,7 @@ public class Product {
         this.newProduct = newProduct;
     }
 
-    public Category getIdCategory() {
+    public Category getCategory() {
         return category;
     }
 
