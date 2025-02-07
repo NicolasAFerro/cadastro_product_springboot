@@ -7,15 +7,15 @@ public class Product {
     private String description;
     private boolean promotion;
     private boolean newProduct;
-    private int idCategory;
+    private Category category;
 
-    public Product(int id, String description, boolean promotion, boolean newProduct, int idCategory, String name,
+    public Product(int id, String description, boolean promotion, boolean newProduct, Category category, String name,
             double price) {
         this.id = id;
         this.description = description;
         this.promotion = promotion;
         this.newProduct = newProduct;
-        this.idCategory = idCategory;
+        this.category=category;
         this.name = name;
         this.price = price;
     }
@@ -44,12 +44,12 @@ public class Product {
         this.newProduct = newProduct;
     }
 
-    public int getIdCategory() {
-        return idCategory;
+    public Category getIdCategory() {
+        return category;
     }
 
-    public void setIdCategory(int idCategory) {
-        this.idCategory = idCategory;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     private String name;
